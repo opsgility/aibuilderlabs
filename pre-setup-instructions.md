@@ -58,8 +58,12 @@ Task #2 – Create environment
     
 ## Task 3 – AI Builder Trial
 
-Task #3 - Setup a trial
-1. Visit the [AI Builder site](https://powerapps.microsoft.com/ai-builder/)
+
+1. Visit the [Power Apps Site](https://make.powerapps.com/)
+
+1. On the left navigation, click **AI Builder**.
+
+1. At the top of that page, click **Get AI Builder Trial**
 
 1. Click **Start free**
 
