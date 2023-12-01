@@ -8,11 +8,17 @@ Task #1 - Acquire your Microsoft Power Platform trial tenant
 
 1.  Copy your **Microsoft 365 credentials** from the credentials provided to you by your coach. 
 
-1.  Navigate to <https://powerapps.microsoft.com> and select **Start free**.
+1.  Navigate to the following URL and select **Start free**.
 
-    ![](images/startfree.png)
+    ```
+    https://powerapps.microsoft.com/en-us/free/
+    ```
 
-1.  Under **Let's get started**, enter the email address provided by the Authorized Lab Hoster and select **Start your free trial**. 
+1.  Click **Use Apps** and then **Start Using Apps**
+
+    ![](images/starttrial.png)
+
+1.  Under **Let's get started**, enter the email address provided to you and select **Start your free trial**. 
 
 1.  If an extra page appears with **Start building apps** and **Start using apps** buttons, then click **Start using apps** - not Start building apps.
 
