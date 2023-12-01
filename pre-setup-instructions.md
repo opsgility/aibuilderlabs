@@ -85,7 +85,7 @@ Task #4 - Manual data set up
 1. Step 2: Upload data to the entities created in step 1
 
 - **Prediction**: Follow the instructions in to upload the **Online Shopping Intent** data.
-     - Download the  AIBPredictionSample_simpledeploy_v4.21.3.zip
+     - Download the  [AIBPredictionSample_simpledeploy_v4.21.3.zip](https://opsgilitylabs.blob.core.windows.net/public/aibuilder/AIBPredictionSample_simpledeploy_v4.21.3.zip)
      - Ensure that the file isn't blocked after you download. To do this:  
     In the Downloads folder, find the downloaded zip file, right-click, and then select Properties.
     
