@@ -16,7 +16,7 @@ Task #1 - Acquire your Microsoft Power Platform trial tenant
 
 1.  Click **Use Apps** and then **Start Using Apps**
 
-    ![](images/starttrial.png)
+    ![](images/start-trial.png)
 
 1.  Under **Let's get started**, enter the email address provided to you and select **Start your free trial**. 
 
