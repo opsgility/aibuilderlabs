@@ -1,12 +1,14 @@
 ## Exercise 3 - Extract information from receipts
 
-- Start at the [AI Builder site](https://powerapps.microsoft.com/ai-builder/)
+- Start at the [Power Apps site](https://make.poweraps.com/)
 
 - With your environment selected choose **AI Models** from the navigation. If it is not visible you might have to click the **... More** navigation to add it to the menu. 
 
     ![](images/aimodels.png)
 
-- In the main portion of the screen click on the **Documents** tab to filter the results. Finally, select **Extract information from receipts**
+- In the main portion of the screen click on the **Documents** tab to filter the results. 
+
+- Finally, select **Extract information from receipts**
 
     ![](images/textfromreceipts.png)
     
@@ -24,11 +26,9 @@
 
     ![](images/onedrivetab.png)
     
-- Upload the following [file](https://opsgilitylabs.blob.core.windows.net/public/aibuilder/Receipts.xlsx) to use in this exercise.
-
 - In OneDrive click on the **Add new** button and choose **Files upload**
 
-- Select the **Receipts.xlsx** file previously downloaded and upload to **OneDrive**.
+- Upload the following file **Receipts.xlsx** from the Lab Downloads file in the **AIBuilderLabFiles\ReceiptsProcessing_Contoso** folder.
 
 - Return to the **Flow** tab in the browser
 
@@ -38,8 +38,9 @@
     
 - Now select the fourth, and last step, called **Add a row into a table**. **Note:** this does require the file to uploaded from the previous step. 
 
-    ![](images/addarow.png)
-    
+    ![](images/add-a-row.png)
+
+   
 - In the properties panel choose the **Document Library** and select **OneDrive**
 
     ![](images/onedrive2.png)
@@ -49,6 +50,12 @@
 - In the **Table** dropdown select **Table1** which is defined in the Excel spreadsheet that was uploaded to OneDrive.
 
     ![](images/ttable1.png)
+
+
+- The view after configured.
+
+    ![](images/add-table-final.png)
+
     
 - In the **Advanced parameters** section you should see some pre-populated values. Click on the **Show all** link. This will show all the potential values available.
 
@@ -67,16 +74,18 @@
 
     ![](images/save1.png)
     
-- Before running a test make sure you understand the steps
+- Remove the following unnesserry options by clicking the X button. Then click **Save** again.
 
-    - After clicking the **Test** button You will need to switch the the OneDrive tab, previously left open
-    - Then you need to upload a receipts file to the root of OneDrive from the **ReceiptsProcessing_Contoso** folder previously downloaded.
-    - When the file is uploaded it will trigger the **Flow** to activate
-    
-- Then click on **Test** and choose the radio button for **Manually** and finally click the **Test** button
+    ![](images/remove-fields.png)
+
+  
+- Then click on **Test** and choose the radio button for **Manually** and finally click the **Test** button. This will start the flow to monitor for uploaded files to OneDrive.
 
     ![](images/test3.png)
     
+
+- Switch back to the OneDrive tab and upload one of the sample receipts from the C:\LabFiles\ReceiptsProcessing_Contoso folder. 
+
 - This shows the completed **Flow**
 
     ![](images/receiptsflow.png)
@@ -86,3 +95,7 @@
 - Depending on the parameters added and file chosen you might see different values
 
     ![](images/receiptout.png)
+
+    > The values were parsed from the uploaded reciept and stored in the spreadsheet.
+
+    

@@ -2,7 +2,7 @@
 
 > In this section you will be using a similar classification but rather than the pre-existing model we will create a custom model to utilize.
 
-- Start at the [AI Builder site](https://powerapps.microsoft.com/ai-builder/)
+- Start at [Power Automate](https://make.powerautomate.com/)
 
 - With your environment selected choose **AI Models** from the navigation. If it is not visible you might have to click the **... More** navigation to add it to the menu. 
 

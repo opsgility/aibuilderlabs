@@ -16,31 +16,35 @@ To get the best results, provide one clear photo or scan per invoice.
 - PDF dimensions must be at most 17 x 17 inches, which is the equivalent of the Legal or A3 paper sizes or smaller.
 - For PDF documents, only the first 2,000 pages are processed.
 
-## Key-value pairs
+## Download sample data
 
-Key-value pairs are all the identified labels or keys and their associated responses or values. You can use these to extract additional values that aren't part of the predefined list of fields.
+Each member of the team should complete this step.
 
-To visualize all key-value pairs detected by the invoice processing model, you can add a **Create HTML table** action in your flow as shown in the screenshot and run the flow.
+Throughout the lab, you will need to upload various files to test out AI Builders capabilities.
 
-![](images/htmltable.png)
+- Create a folder somewhere on your computer named: **AIBuilderLabFiles**
 
-![](images/run.png)
+- Download the [sample data file](https://opsgilitylabs.blob.core.windows.net/public/aibuilder/AIBuilderSampleData.zip) and unzip it's contents into the new folder.
 
-To extract a specific key for which you know its value, you can use the **Filter array** action as shown on the screenshot below. In the example of the screenshot, we want to extract the value for the key **Tel .:**
 
-![](images/extract.png)
 
 ## Exercise 1
-- Start at the [AI Builder site](https://powerapps.microsoft.com/ai-builder/)
+
+- Start at the [Power Automate site](https://make.powerautomate.com/)
 
 - With your environment selected choose **AI Models** from the navigation. If it is not visible you might have to click the **... More** navigation to add it to the menu. 
 
     ![](images/aimodels.png)
-    
-- In the main portion of the screen click on the **Documents** tab to filter the results. Finally, select **Extract information from Invoices**
+
+
+- In the main portion of the screen click on the **Documents** tab to filter the results. 
 
     ![](images/invoices.png)
     
+- Finally, select **Extract information from Invoices**
+
+    ![](images/extract-from-invoices.png)
+
 **Note:** Ensure that you are not in the **custom information** extraction
 
 - In the dialog, click on **Use prebuilt model** and choose **Use in a flow** option from the dropdown. This means we will build a re-usable Power Automate Flow to create a re-usable Invoice Flow. 
@@ -51,7 +55,7 @@ To extract a specific key for which you know its value, you can use the **Filter
 
     ![](images/signing.png)
     
-- When you click **Sign in** you will see a quick dialog and when you have **Signed in** to all three connectors it will resemble the following with **Green** circled checks:
+- Click **Sign in** for each connection. When you click **Sign in** you will see a quick dialog and when you have **Signed in** to all three connectors it will resemble the following with **Green** circled checks:
 
     ![](images/green.png)
     
@@ -65,7 +69,7 @@ To extract a specific key for which you know its value, you can use the **Filter
 
     ![](images/save1.png)\
     
-- Then click on the **Test** button
+- Then click on the **Test** button at the top right of your screen.
 
     ![](images/test.png)
     
@@ -73,7 +77,10 @@ To extract a specific key for which you know its value, you can use the **Filter
 
     ![](images/signin2.png)
     
-- Click the **Import** button and open the folder you extracted the **aibuilderlab** content into. Then open the **Lab Images** folder. Then open the **DocumentProcessing_Invoices_Adatum** folder and select the **Test** folder. There is only a single invoice in there and it is a pdf file called **Adatum 6.pdf** file. 
+
+- Click the **Import** button.
+
+- Open the **AIBuilderLabFiles** folder that has the downloaded sample data. Then open the **DocumentProcessing_Invoices_Adatum** folder and select the **Test** folder. There is only a single invoice in there and it is a pdf file called **Adatum 6.pdf** file. Select it for the import. 
 
 - Then click the **Run flow** button at the bottom
 
@@ -87,17 +94,17 @@ To extract a specific key for which you know its value, you can use the **Filter
 
     ![](images/green1.png)
     
-- Expand the step called**Extract information from invoices.** There are two sections available in the step. **Inputs** and **Outputs**. The **Input** section will show a binary section of text that represents the submitted pdf file. In the **Outputs** section you can see all the extracted fields. 
+- Click the step called **Extract information from invoices.** There are two sections available in the step. **Inputs** and **Outputs**. The **Input** section will show a binary section of text that represents the submitted pdf file. In the **Outputs** section you can see all the extracted fields in JSON format (used by developers).
 
-    ![](images/outputs1.png)
-    
+    ![](images/invoiceprocessed.png)
+
 - If you want to see the email click on the **9 square** in the upper right hand corner. Then choose **Outlook** but choose **Open in new tab**
 
     ![](images/newtab.png)
     
 - In **Outlook** open the item title **Invoice processed**
 
-    ![](images/invoiceprocessed.png)
+  
     
 - Browse all the mapped fields in the email
 

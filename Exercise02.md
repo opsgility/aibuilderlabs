@@ -1,10 +1,15 @@
 ## Exercise 2
 
-- Start at the [AI Builder site](https://powerapps.microsoft.com/ai-builder/)
+- Start at the [Power Automate site](https://make.powerautomate.com/)
 
 - With your environment selected choose **AI Models** from the navigation. If it is not visible you might have to click the **... More** navigation to add it to the menu. 
 
     ![](images/aimodels.png)
+
+
+- In the main portion of the screen click on the **Documents** tab to filter the results. 
+
+    ![](images/invoices.png)
 
 - In the main portion of the screen click on the **Documents** tab to filter the results. Finally, select **Extract all the text in photos and PDF Documents(OCR)**
 
@@ -26,7 +31,10 @@
 
     ![](images/signin2.png)
 
-- Click the **Import** button and open the folder you extracted the **aibuilderlab** content into. Then open the **Lab Images** folder. Then open the **TextRecognizer** folder. There is only a single invoice in there and it is a png file called **TextReco-SamplePrinted.png** file. 
+
+- Click the **Import** button.
+
+- Open the **AIBuilderLabFiles** folder that has the downloaded sample data. Then open the **TextRecognizer** folder. Select the **TextReco-SamplePrinted.png** invoice for the import. 
 
 - Then click the **Run flow** button at the bottom
 

@@ -2,11 +2,8 @@
 
 - In this exercise rather than use a pre-built model. We will be creating our own model.
 
-- Starting at the nine-square in the upper left-hand corner mouseover **Power Automate** and select the three dots and choose **Open in new tab**
-
-    ![](images/automate.png)
+- Starting at the [Power Automate portal](https://make.powerautomate.com/) 
     
-
 
 - With your environment selected choose **Create** from the navigation. 
 
@@ -20,9 +17,14 @@
 
     ![](images/onedrive3.png)
 
+- Click the **When a file is created** action.
+
+    ![](images/when-file-created.png)
+
 - There should be one **Trigger** on the page that needs to be configured.
 
 - Select the **Trigger** and select **Root**
+    ![](images/select-root.png)
 
     ![](images/rootselected.png)
     
@@ -48,7 +50,7 @@
     
 - Next click on the **+** sign and choose **Add an action**
 
-    ![](images/addaction.png)
+    ![](images/add-action-sentiment.png)
     
 - Search for **condition** and select **Condition** from the options provided
 
@@ -70,6 +72,10 @@
 
     ![](images/emailnotification.png)
     
+- You will be prompted to create a new connection. Click **Create New**.
+
+    ![](images/notification-connection.png)
+
 - Click in the **Subject** text box and click on the lightning bolt
 
     ![](images/subject.png)
@@ -86,9 +92,11 @@
 
     ![](images/readytotest.png)
     
-- Then click on **Test** and choose the radio button for **Manually** and finally click the **Test** button. Similar to the previous exercise you need to kickoff the test, switch the **OneDrive** and upload one of the files in [this zip file](https://opsgilitylabs.blob.core.windows.net/public/aibuilder/reviews.zip). 
+- Then click on **Test** and choose the radio button for **Manually** and finally click the **Test** button. Similar to the previous exercise you need to kickoff the test, switch the **OneDrive** and upload one of the sample review files from the downloaded sample data: **AIBuilderLabFiles\Reviews**.
 
     ![](images/test.png)
+
+    > Note: It may take several minutes for the flow to start after you upload the review to OneDrive. Switch back to the browser tab with your flow to see it start.
 
 - After the flow completes it should resemble the following
 
