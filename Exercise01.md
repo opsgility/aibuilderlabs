@@ -5,7 +5,7 @@
 
 In this exercise, you will download sample data that will be used throughout the rest of the lab. From there, you will use a pre-created AI model to demonstrate how to programmatically parse an invoice in PDF Format. 
 
-## Download sample data
+## Task 1: Download sample data
 
 Each member of the team should complete this step.
 
@@ -14,6 +14,9 @@ Throughout the lab, you will need to upload various files to test out AI Builder
 - Create a folder somewhere on your computer named: **AIBuilderLabFiles**
 
 - Download the [sample data file](https://opsgilitylabs.blob.core.windows.net/public/aibuilder/AIBuilderSampleData.zip) and unzip it's contents into the new folder.
+
+
+## Task 2: Using an AI Model and Flow to Parse invoices
 
 - Start at the [Power Automate site](https://make.powerautomate.com/)
 
