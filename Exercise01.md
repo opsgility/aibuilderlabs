@@ -24,6 +24,10 @@ Throughout the lab, you will need to upload various files to test out AI Builder
 
 - Start at the [Power Automate site](https://make.powerautomate.com/) and when prompted login with the Microsoft 365 lab account provided to your team.
 
+- In the top right of the screen, change the Environment to **AIBuilderEnv** 
+
+    ![](/images/ai-builder-env.png)
+
 - With your environment selected choose **AI Models** from the navigation. If it is not visible you might have to click the **... More** navigation to add it to the menu. 
 
     ![](images/aimodels.png)
