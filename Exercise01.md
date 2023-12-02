@@ -1,20 +1,9 @@
-# Lab 1: Working with Documents
+## Exercise 1: Working with Documnents
 
-## Invoice processing prebuilt AI model
 
-The invoice processing prebuilt AI model extracts key invoice data to help automate the processing of invoices. The invoice processing model is optimized to recognize common invoice elements like invoice ID, invoice date, amount due, and more.
+## Overview 
 
-## Supported languages and files
-
-The following languages are supported: Dutch (Netherlands), English (Australia), English (Canada), English (India), English (United Kingdom), English (United States), French (France), German (Germany), Italian (Italy), Portuguese (Portugal), Spanish (Spain).
-
-To get the best results, provide one clear photo or scan per invoice.
-
-- The image format must be JPEG, PNG, or PDF.
-- The file size must not exceed 20 MB.
-- The image dimensions must be between 50 x 50 pixels and 10,000 x 10,000 pixels.
-- PDF dimensions must be at most 17 x 17 inches, which is the equivalent of the Legal or A3 paper sizes or smaller.
-- For PDF documents, only the first 2,000 pages are processed.
+In this exercise, you will download sample data that will be used throughout the rest of the lab. From there, you will use a pre-created AI model to demonstrate how to programmatically parse an invoice in PDF Format. 
 
 ## Download sample data
 
@@ -25,10 +14,6 @@ Throughout the lab, you will need to upload various files to test out AI Builder
 - Create a folder somewhere on your computer named: **AIBuilderLabFiles**
 
 - Download the [sample data file](https://opsgilitylabs.blob.core.windows.net/public/aibuilder/AIBuilderSampleData.zip) and unzip it's contents into the new folder.
-
-
-
-## Exercise 1
 
 - Start at the [Power Automate site](https://make.powerautomate.com/)
 
