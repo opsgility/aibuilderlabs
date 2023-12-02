@@ -41,9 +41,10 @@ Throughout the lab, you will need to upload various files to test out AI Builder
 
     ![](images/extract-from-invoices.png)
 
-**Note:** Ensure that you are not in the **custom information** extraction
 
 - In the dialog, click on **Use prebuilt model** and choose **Use in a flow** option from the dropdown. This means we will build a re-usable Power Automate Flow to create a re-usable Invoice Flow. 
+
+    ![](images/use-prebuilt-model.png)
 
     ![](images/useinflow1.png)
 
