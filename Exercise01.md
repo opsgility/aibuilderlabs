@@ -30,7 +30,7 @@ Task #2 – Create environment
 
 1.  Select **Environments** and select **+ New**.
 
-    1. For **Name**, enter **AIBuilder**
+    1. For **Name**, enter **AIBuilderEnv**
 
     1. For **Type**, choose **Trial** (Do not select the *Trial (subscription-based)* option).
 
