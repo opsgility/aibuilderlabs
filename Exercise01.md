@@ -22,7 +22,7 @@ Throughout the lab, you will need to upload various files to test out AI Builder
 
 - Launch a new browser instance using in-private or in-cognito mode. 
 
-- Start at the [Power Automate site](https://make.powerautomate.com/) and when prompted login with the Microsoft 365 lab account provided to your team.
+- Start at the [Power Automate site](https://make.powerautomate.com/) and when prompted login with the Microsoft 365 lab account provided to your team. https://make.powerautomate.com/
 
 - In the top right of the screen, change the Environment to **AIBuilderEnv** 
 
