@@ -8,7 +8,7 @@ Task #1 - Acquire your Microsoft Power Platform trial tenant
 
 1.  Navigate to <https://powerapps.microsoft.com> and select **Start free**.
 
-    ![](images/startfree.png)
+    ![](images/tryforfree.png)
 
 1.  Under **Let's get started**, enter the email address provided by the Authorized Lab Hoster and select **Start your free trial**. 
 
