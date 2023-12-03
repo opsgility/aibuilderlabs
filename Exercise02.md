@@ -1,6 +1,6 @@
 ## Exercise 2
 
-- Start at the [Power Automate site](https://make.powerautomate.com/)
+- Start at the [Power Automate site](https://make.powerautomate.com/) - https://make.powerautomate.com/
 
 - With your environment selected choose **AI Models** from the navigation. If it is not visible you might have to click the **... More** navigation to add it to the menu. 
 
