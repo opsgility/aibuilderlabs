@@ -1,3 +1,8 @@
+# AI Builder Lab
+
+AI Builder is a Microsoft platform feature that provides a user-friendly interface for building, training, and deploying custom artificial intelligence (AI) models without the need for extensive coding or data science expertise. Integrated with Microsoft Power Platform and Dynamics 365, it empowers users to automate tasks and gain insights from data through AI-driven solutions. Users can leverage pre-built AI models or create their own using the intuitive interface. Common applications include form processing, object detection, predictive modeling, and OpenAI. Overall, AI Builder democratizes AI, making it accessible to a broader audience within organizations. 
+
+
 ## Exercise 1: Working with Documnents
 
 
@@ -20,15 +25,16 @@ Throughout the lab, you will need to upload various files to test out AI Builder
 
 ## Task 2: Using an AI Model and Flow to Parse invoices
 
-- Launch a new browser instance using in-private or in-cognito mode. 
+- Launch a **new browser instance** using in-private or in-cognito mode. 
 
-- Start at the [Power Automate site](https://make.powerautomate.com/) and when prompted login with the Microsoft 365 lab account provided to your team.
+    > If you are using Chrome or Edge, right click on the Icon in the task bar and select in-private or in-cognito. 
+
+- In the new browser instance, navigate to [Power Automate site](https://make.powerautomate.com/) and when prompted login with the Microsoft 365 lab account provided to your team.
 
 - In the top right of the screen, change the Environment to **AIBuilderEnv** 
 
-    ![](/images/ai-builder-env.png)
 
-- With your environment selected choose **AI Models** from the navigation. If it is not visible you might have to click the **... More** navigation to add it to the menu. 
+- Choose **AI Models** from the navigation. If it is not visible you might have to click the **... More** navigation to add it to the menu. 
 
     ![](images/aimodels.png)
 
@@ -109,5 +115,6 @@ Throughout the lab, you will need to upload various files to test out AI Builder
 
 
     
+## Summary
 
-
+In this exercise, you created a flow that leveraged a pre-created AI Builder model to parse a PDF invoice and emailed the results all without writing any code.

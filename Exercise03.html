@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>LAB GUIDE – includes</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://opsgilitylabs.blob.core.windows.net/lablayout/labstyles.css"></link>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2 id="exercise-3---extract-information-from-receipts">Exercise 3 -
+Extract information from receipts</h2>
+<ul>
+<li><p>Using the same in-private browser instance, navigate to the <a
+href="https://make.powerapps.com/">Power Apps site</a> site.</p></li>
+<li><p>In the top right of the screen, ensure the Environment is set to
+<strong>AIBuilderEnv</strong>.</p></li>
+<li><p>With your environment selected choose <strong>AI Models</strong>
+from the navigation. If it is not visible you might have to click the
+<strong>… More</strong> navigation to add it to the menu.</p>
+<p><img src="images/aimodels.png" /></p></li>
+<li><p>In the main portion of the screen click on the
+<strong>Documents</strong> tab to filter the results.</p></li>
+<li><p>Finally, select <strong>Extract information from
+receipts</strong></p>
+<p><img src="images/textfromreceipts.png" /></p></li>
+<li><p>In the dialog, click on <strong>Use prebuilt model</strong> and
+choose <strong>Use in a flow</strong> option from the dropdown. This
+means we will build a re-usable Power Automate Flow to create a
+re-usable Flow to Extract all the text in photos and PDF documents
+(OCR).</p></li>
+<li><p>Select the <strong>Track expenses by scanning receipts to your
+OneDrive for Business</strong> template that is already pre-created.</p>
+<p><img src="images/expenses.png" /></p></li>
+<li><p>Very similiar to the previous exercise validate that you see
+green checks next to all the connections. Then click
+<strong>Continue</strong></p>
+<p><img src="images/continue2.png" /></p></li>
+<li><p>Before configuring the <strong>Flow</strong> click on the nine
+square in the upper-right hand corner. Then select the three dots next
+to <strong>OneDrive</strong> and choose <strong>Open in new
+tab</strong></p>
+<p><img src="images/onedrivetab.png" /></p></li>
+<li><p>In OneDrive click on the <strong>Add new</strong> button and
+choose <strong>Files upload</strong></p></li>
+<li><p>Upload the following file <strong>Receipts.xlsx</strong> from the
+Lab Downloads file in the **AIBuilderLabFiles_Contoso** folder.</p></li>
+<li><p>Return to the <strong>Flow</strong> tab in the browser</p></li>
+<li><p>There are two steps that need additional configuration. Select
+the first step called <strong>When a file is created</strong>. When
+selected the properties panel will open. Click on the
+<strong>folder</strong> icon and choose <strong>Root</strong> to select
+the top level folder in <strong>OneDrive</strong>.</p>
+<p><img src="images/rootselected.png" /></p></li>
+<li><p>Now select the fourth, and last step, called <strong>Add a row
+into a table</strong>. <strong>Note:</strong> this does require the file
+to uploaded from the previous step.</p>
+<p><img src="images/add-a-row.png" /></p></li>
+<li><p>In the properties panel choose the <strong>Document
+Library</strong> and select <strong>OneDrive</strong></p>
+<p><img src="images/onedrive2.png" /></p></li>
+<li><p>Next click on the folder icon and select the
+<strong>Receipts.xlsx</strong> file previously uploaded.</p></li>
+<li><p>In the <strong>Table</strong> dropdown select
+<strong>Table1</strong> which is defined in the Excel spreadsheet that
+was uploaded to OneDrive.</p>
+<p><img src="images/ttable1.png" /></p></li>
+<li><p>The view after configured.</p>
+<p><img src="images/add-table-final.png" /></p></li>
+<li><p>In the <strong>Advanced parameters</strong> section you should
+see some pre-populated values. Click on the <strong>Show all</strong>
+link. This will show all the potential values available.</p>
+<p><img src="images/showall.png" /></p></li>
+<li><p>From the <strong>DateTime Format</strong> dropdown choose
+<strong>ISO 8601</strong></p>
+<p><img src="images/iso.png" /></p></li>
+<li><p>To add additional parameters you can use the following animation
+to assist.</p>
+<p><img src="images/parmsmapping.gif" /></p></li>
+<li><p>Click on <strong>Save</strong> in the upper right-hand corner</p>
+<p><img src="images/save1.png" /></p></li>
+<li><p>Remove the following unnesserry options by clicking the X button.
+Then click <strong>Save</strong> again.</p>
+<p><img src="images/remove-fields.png" /></p></li>
+<li><p>Then click on <strong>Test</strong> and choose the radio button
+for <strong>Manually</strong> and finally click the
+<strong>Test</strong> button. This will start the flow to monitor for
+uploaded files to OneDrive.</p>
+<p><img src="images/test3.png" /></p></li>
+<li><p>Switch back to the OneDrive tab and upload one of the sample
+receipts from the C:_Contoso folder.</p></li>
+<li><p>This shows the completed <strong>Flow</strong></p>
+<p><img src="images/receiptsflow.png" /></p></li>
+<li><p>Now switch back to the <strong>OneDrive</strong> tab and open the
+<strong>Receipts.xlsx</strong> file</p></li>
+<li><p>Depending on the parameters added and file chosen you might see
+different values</p>
+<p><img src="images/receiptout.png" /></p>
+<blockquote>
+<p>The values were parsed from the uploaded reciept and stored in the
+spreadsheet.</p>
+</blockquote></li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>In this exercise, you created a flow that leveraged a pre-created AI
+Builder model to parse data out of uploaded reciepts and saved the
+results in a spreadsheet all without writing any code.</p>
+</body>
+</html>

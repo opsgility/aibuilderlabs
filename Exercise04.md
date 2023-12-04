@@ -1,11 +1,14 @@
 ## Exercise 4 - Detect positive, negative, or neutral sentiment
 
-- In this exercise rather than use a pre-built model. We will be creating our own model.
+In this exercise rather than use a pre-built model. We will be creating our own model.
 
-- Starting at the [Power Automate portal](https://make.powerautomate.com/) 
-    
+- Using the same in-private browser instance, navigate to the [Power Automate site](https://make.powerautomate.com/) if you are not already there. 
 
-- With your environment selected choose **Create** from the navigation. 
+
+- In the top right of the screen, ensure the Environment is set to **AIBuilderEnv**.
+
+
+- Choose **Create** from the navigation. 
 
     ![](images/create.png)
     
@@ -105,3 +108,8 @@
 - You can also visit the **Outlook** web client to see the notification and text that was sent.
 
     ![](images/mixed.png)
+
+
+## Summary
+
+In this exercise, you created a flow that leveraged a pre-created AI Builder model to parse and analyze sentiment data out of uploaded review data all without writing any code.

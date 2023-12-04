@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>LAB GUIDE – includes</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://opsgilitylabs.blob.core.windows.net/lablayout/labstyles.css"></link>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2 id="exercise-2">Exercise 2</h2>
+<ul>
+<li><p>Using the same in-private browser instance, navigate to the <a
+href="https://make.powerautomate.com/">Power Automate site</a> if you
+are not already there.</p></li>
+<li><p>In the top right of the screen, ensure the Environment is set to
+<strong>AIBuilderEnv</strong>.</p></li>
+<li><p>Choose <strong>AI Models</strong> from the navigation. If it is
+not visible you might have to click the <strong>… More</strong>
+navigation to add it to the menu.</p>
+<p><img src="images/aimodels.png" /></p></li>
+<li><p>In the main portion of the screen click on the
+<strong>Documents</strong> tab to filter the results.</p>
+<p><img src="images/invoices.png" /></p></li>
+<li><p>In the main portion of the screen click on the
+<strong>Documents</strong> tab to filter the results. Finally, select
+<strong>Extract all the text in photos and PDF
+Documents(OCR)</strong></p>
+<p><img src="images/textfromphotos.png" /></p></li>
+<li><p>In the dialog, click on <strong>Use prebuilt model</strong> and
+choose <strong>Use in a flow</strong> option from the dropdown. This
+means we will build a re-usable Power Automate Flow to create a
+re-usable Flow to Extract all the text in photos and PDF documents
+(OCR).</p></li>
+<li><p>Very similiar to the previous exercise validate that you see
+green checks next to all the connections. Then click
+<strong>Continue</strong></p></li>
+<li><p>Click on <strong>Save</strong> in the upper-right hand corner.
+Give it few seconds to complete.</p>
+<p><img src="images/save1.png" /><br />
+</p></li>
+<li><p>Then click on the <strong>Test</strong> button</p>
+<p><img src="images/test.png" /></p></li>
+<li><p>You might also get another <strong>Sign in</strong> prompt. Click
+<strong>Continue</strong></p>
+<p><img src="images/signin2.png" /></p></li>
+<li><p>Click the <strong>Import</strong> button.</p></li>
+<li><p>Open the <strong>AIBuilderLabFiles</strong> folder that has the
+downloaded sample data. Then open the <strong>TextRecognizer</strong>
+folder. Select the <strong>TextReco-SamplePrinted.png</strong> invoice
+for the import.</p></li>
+<li><p>Then click the <strong>Run flow</strong> button at the bottom</p>
+<p><img src="images/adatum6.png" /></p></li>
+<li><p>Flow is running. Then click <strong>Done</strong></p>
+<p><img src="images/runsuccess.png" /></p></li>
+<li><p>Next visit the Outlook web email again and look for the
+<strong>Text Recognition results</strong> email.</p>
+<p><img src="images/textrecog.png" /></p></li>
+<li><p>Review the results</p>
+<p><img src="images/reviewtextrecog.png" /></p></li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>In this exercise, you created a flow that leveraged a pre-created AI
+Builder model to parse the text out of an image and emailed the results
+all without writing any code.</p>
+</body>
+</html>

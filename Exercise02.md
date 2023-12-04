@@ -1,8 +1,12 @@
 ## Exercise 2
 
-- Start at the [Power Automate site](https://make.powerautomate.com/)
+- Using the same in-private browser instance, navigate to the [Power Automate site](https://make.powerautomate.com/) if you are not already there. 
 
-- With your environment selected choose **AI Models** from the navigation. If it is not visible you might have to click the **... More** navigation to add it to the menu. 
+
+- In the top right of the screen, ensure the Environment is set to **AIBuilderEnv**.
+
+
+- Choose **AI Models** from the navigation. If it is not visible you might have to click the **... More** navigation to add it to the menu. 
 
     ![](images/aimodels.png)
 
@@ -51,3 +55,9 @@
 - Review the results
 
     ![](images/reviewtextrecog.png)
+
+
+
+## Summary
+
+In this exercise, you created a flow that leveraged a pre-created AI Builder model to parse the text out of an image and emailed the results all without writing any code.

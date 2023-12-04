@@ -1,6 +1,11 @@
 ## Exercise 3 - Extract information from receipts
 
-- Start at the [Power Apps site](https://make.poweraps.com/)
+
+- Using the same in-private browser instance, navigate to the [Power Apps site](https://make.powerapps.com/) site.  
+
+
+- In the top right of the screen, ensure the Environment is set to **AIBuilderEnv**.
+
 
 - With your environment selected choose **AI Models** from the navigation. If it is not visible you might have to click the **... More** navigation to add it to the menu. 
 
@@ -99,3 +104,7 @@
     > The values were parsed from the uploaded reciept and stored in the spreadsheet.
 
     
+
+## Summary
+
+In this exercise, you created a flow that leveraged a pre-created AI Builder model to parse data out of uploaded reciepts and saved the results in a spreadsheet all without writing any code.

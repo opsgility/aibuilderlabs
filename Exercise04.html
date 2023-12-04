@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>LAB GUIDE – includes</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://opsgilitylabs.blob.core.windows.net/lablayout/labstyles.css"></link>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2
+id="exercise-4---detect-positive-negative-or-neutral-sentiment">Exercise
+4 - Detect positive, negative, or neutral sentiment</h2>
+<p>In this exercise rather than use a pre-built model. We will be
+creating our own model.</p>
+<ul>
+<li><p>Using the same in-private browser instance, navigate to the <a
+href="https://make.powerautomate.com/">Power Automate site</a> if you
+are not already there.</p></li>
+<li><p>In the top right of the screen, ensure the Environment is set to
+<strong>AIBuilderEnv</strong>.</p></li>
+<li><p>Choose <strong>Create</strong> from the navigation.</p>
+<p><img src="images/create.png" /></p></li>
+<li><p>Then choose <strong>Automated cloud flow</strong></p>
+<p><img src="images/autocloudflow.png" /></p></li>
+<li><p>In the following prompt select <strong>When a file is
+created</strong> for the <strong>OneDrive for Business</strong> trigger.
+Then click <strong>Create</strong>.</p>
+<p><img src="images/onedrive3.png" /></p></li>
+<li><p>Click the <strong>When a file is created</strong> action.</p>
+<p><img src="images/when-file-created.png" /></p></li>
+<li><p>There should be one <strong>Trigger</strong> on the page that
+needs to be configured.</p></li>
+<li><p>Select the <strong>Trigger</strong> and select
+<strong>Root</strong> <img src="images/select-root.png" /></p>
+<p><img src="images/rootselected.png" /></p></li>
+<li><p>Next click on the <strong>+</strong> sign and choose <strong>Add
+an action</strong></p>
+<p><img src="images/addaction.png" /></p></li>
+<li><p>In the slideout search for <strong>sentiment</strong> and choose
+<strong>Analyze positive or negative sentiment in text</strong>. This
+will add another step to the flow.</p>
+<p><img src="images/sentiment2.png" /></p></li>
+<li><p>The properties side panel will open. In the
+<strong>Language</strong> section click on the dropdown and choose
+<strong>English</strong></p>
+<p><img src="images/english.png" /></p></li>
+<li><p>In the <strong>Text</strong> field we need to pass in the value
+provided from <strong>OneDrive</strong>. Specifically the content. Click
+inside the text field and it will be highlighted with a blue bounding
+box. Then click on the blue lightning bolt.</p>
+<p><img src="images/lightning.png" /></p></li>
+<li><p>In the popup search for <strong>content</strong> in the text box
+and then choose <strong>File content</strong></p>
+<p><img src="images/filecontent.png" /></p></li>
+<li><p>Next click on the <strong>+</strong> sign and choose <strong>Add
+an action</strong></p>
+<p><img src="images/add-action-sentiment.png" /></p></li>
+<li><p>Search for <strong>condition</strong> and select
+<strong>Condition</strong> from the options provided</p>
+<p><img src="images/condition.png" /></p></li>
+<li><p>The resulting condition</p>
+<p><img src="images/condition2.png" /></p></li>
+<li><p>Let’s set the <strong>Condition</strong> parameters. Click in the
+<strong>Choose a value</strong> field and you will notice the blue box.
+Click on the lightning bolt. Then scroll down and select <strong>Overall
+text sentiment</strong>. In the second text box put in the word
+<strong>positive</strong>.</p>
+<p><img src="images/overallsentiment.png" /></p></li>
+<li><p>In the <strong>True</strong> path add another
+<strong>Action</strong></p>
+<p><img src="images/addactiontrue.png" /></p></li>
+<li><p>Search for <strong>notification</strong> and choose <strong>Send
+me an email notification</strong></p>
+<p><img src="images/emailnotification.png" /></p></li>
+<li><p>You will be prompted to create a new connection. Click
+<strong>Create New</strong>.</p>
+<p><img src="images/notification-connection.png" /></p></li>
+<li><p>Click in the <strong>Subject</strong> text box and click on the
+lightning bolt</p>
+<p><img src="images/subject.png" /></p></li>
+<li><p>Select <strong>Overall text sentiment</strong></p>
+<p><img src="images/overallsentiment2.png" /></p></li>
+<li><p>Do exactly the same steps for the <strong>Body</strong>
+content</p></li>
+<li><p>Then repeat the same steps on the <strong>False</strong>
+path.</p></li>
+<li><p>Click on <strong>Save</strong> and wait a few moments until you
+get a confirmation that the flow has been saved</p>
+<p><img src="images/readytotest.png" /></p></li>
+<li><p>Then click on <strong>Test</strong> and choose the radio button
+for <strong>Manually</strong> and finally click the
+<strong>Test</strong> button. Similar to the previous exercise you need
+to kickoff the test, switch the <strong>OneDrive</strong> and upload one
+of the sample review files from the downloaded sample data:
+**AIBuilderLabFiles*.</p>
+<p><img src="images/test.png" /></p>
+<blockquote>
+<p>Note: It may take several minutes for the flow to start after you
+upload the review to OneDrive. Switch back to the browser tab with your
+flow to see it start.</p>
+</blockquote></li>
+<li><p>After the flow completes it should resemble the following</p>
+<p><img src="images/completed1.png" /></p></li>
+<li><p>You can also visit the <strong>Outlook</strong> web client to see
+the notification and text that was sent.</p>
+<p><img src="images/mixed.png" /></p></li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>In this exercise, you created a flow that leveraged a pre-created AI
+Builder model to parse and analyze sentiment data out of uploaded review
+data all without writing any code.</p>
+</body>
+</html>

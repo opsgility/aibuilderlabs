@@ -2,9 +2,12 @@
 
 ## Exercise 5 - Classify text
 
-- Start at [Power Automate](https://make.powerautomate.com/)
+- Using the same in-private browser instance, navigate to the [Power Automate site](https://make.powerautomate.com/) if you are not already there. 
 
-- With your environment selected choose **+ Create** from the navigation on the left. 
+- In the top right of the screen, ensure the Environment is set to **AIBuilderEnv**.
+
+
+- Choose **+ Create** from the navigation on the left. 
 
 - Next click on the **Automated cloud flow** button.
 
@@ -67,3 +70,8 @@
 
 
 >**Note**: *Sometimes more than one notification will come across.*
+
+
+## Summary
+
+In this exercise, you created a flow that leveraged a pre-created AI Builder model to parse and classify sentiment data out of uploaded review data all without writing any code.

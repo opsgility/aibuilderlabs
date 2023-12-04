@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>LAB GUIDE – includes</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://opsgilitylabs.blob.core.windows.net/lablayout/labstyles.css"></link>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="ai-builder-lab">AI Builder Lab</h1>
+<p>AI Builder is a Microsoft platform feature that provides a
+user-friendly interface for building, training, and deploying custom
+artificial intelligence (AI) models without the need for extensive
+coding or data science expertise. Integrated with Microsoft Power
+Platform and Dynamics 365, it empowers users to automate tasks and gain
+insights from data through AI-driven solutions. Users can leverage
+pre-built AI models or create their own using the intuitive interface.
+Common applications include form processing, object detection,
+predictive modeling, and OpenAI. Overall, AI Builder democratizes AI,
+making it accessible to a broader audience within organizations.</p>
+<h2 id="exercise-1-working-with-documnents">Exercise 1: Working with
+Documnents</h2>
+<h2 id="overview">Overview</h2>
+<p>In this exercise, you will download sample data that will be used
+throughout the rest of the lab. From there, you will use a pre-created
+AI model to demonstrate how to programmatically parse an invoice in PDF
+Format.</p>
+<h2 id="task-1-download-sample-data">Task 1: Download sample data</h2>
+<p>Each member of the team should complete this step.</p>
+<p>Throughout the lab, you will need to upload various files to test out
+AI Builders capabilities.</p>
+<ul>
+<li><p>Create a folder somewhere on your computer named:
+<strong>AIBuilderLabFiles</strong></p></li>
+<li><p>Download the <a
+href="https://opsgilitylabs.blob.core.windows.net/public/aibuilder/AIBuilderSampleData.zip">sample
+data file</a> and unzip it’s contents into the new folder.</p></li>
+</ul>
+<h2 id="task-2-using-an-ai-model-and-flow-to-parse-invoices">Task 2:
+Using an AI Model and Flow to Parse invoices</h2>
+<ul>
+<li><p>Launch a <strong>new browser instance</strong> using in-private
+or in-cognito mode.</p>
+<blockquote>
+<p>If you are using Chrome or Edge, right click on the Icon in the task
+bar and select in-private or in-cognito.</p>
+</blockquote></li>
+<li><p>In the new browser instance, navigate to <a
+href="https://make.powerautomate.com/">Power Automate site</a> and when
+prompted login with the Microsoft 365 lab account provided to your
+team.</p></li>
+<li><p>In the top right of the screen, change the Environment to
+<strong>AIBuilderEnv</strong></p></li>
+<li><p>Choose <strong>AI Models</strong> from the navigation. If it is
+not visible you might have to click the <strong>… More</strong>
+navigation to add it to the menu.</p>
+<p><img src="images/aimodels.png" /></p></li>
+<li><p>In the main portion of the screen click on the
+<strong>Documents</strong> tab to filter the results.</p>
+<p><img src="images/invoices.png" /></p></li>
+<li><p>Finally, select <strong>Extract information from
+Invoices</strong></p>
+<p><img src="images/extract-from-invoices.png" /></p></li>
+<li><p>In the dialog, click on <strong>Use prebuilt model</strong> and
+choose <strong>Use in a flow</strong> option from the dropdown. This
+means we will build a re-usable Power Automate Flow to create a
+re-usable Invoice Flow.</p>
+<p><img src="images/use-prebuilt-model.png" /></p>
+<p><img src="images/useinflow1.png" /></p></li>
+<li><p>There are several connections required for this demonstration to
+work. If you have never used that connection before the screen will
+resemble the following:</p>
+<p><img src="images/signing.png" /></p></li>
+<li><p>Click <strong>Sign in</strong> for each connection. When you
+click <strong>Sign in</strong> you will see a quick dialog and when you
+have <strong>Signed in</strong> to all three connectors it will resemble
+the following with <strong>Green</strong> circled checks:</p>
+<p><img src="images/green.png" /></p></li>
+<li><p>After that is complete you will need to click the
+<strong>Continue</strong> button</p>
+<p><img src="images/continue.png" /></p></li>
+<li><p>This is using a pre-built model so there are no changes required
+to the <strong>flow</strong> presented</p></li>
+<li><p>Click on <strong>Save</strong> in the upper-right hand corner.
+Give it few seconds to complete.</p>
+<p><img src="images/save1.png" /><br />
+</p></li>
+<li><p>Then click on the <strong>Test</strong> button at the top right
+of your screen.</p>
+<p><img src="images/test.png" /></p></li>
+<li><p>You might also get another <strong>Sign in</strong> prompt. Click
+<strong>Continue</strong></p>
+<p><img src="images/signin2.png" /></p></li>
+<li><p>Click the <strong>Import</strong> button.</p></li>
+<li><p>Open the <strong>AIBuilderLabFiles</strong> folder that has the
+downloaded sample data. Then open the
+<strong>DocumentProcessing_Invoices_Adatum</strong> folder and select
+the <strong>Test</strong> folder. There is only a single invoice in
+there and it is a pdf file called <strong>Adatum 6.pdf</strong> file.
+Select it for the import.</p></li>
+<li><p>Then click the <strong>Run flow</strong> button at the bottom</p>
+<p><img src="images/adatum6.png" /></p></li>
+<li><p>Flow is running. Then click <strong>Done</strong></p>
+<p><img src="images/runsuccess.png" /></p></li>
+<li><p>Since there were no changes made the <strong>final</strong> step
+in the <strong>Flow</strong> sends an email but you should see the
+following steps with <strong>green</strong> checks next to each
+step:</p>
+<p><img src="images/green1.png" /></p></li>
+<li><p>Click the step called <strong>Extract information from
+invoices.</strong> There are two sections available in the step.
+<strong>Inputs</strong> and <strong>Outputs</strong>. The
+<strong>Input</strong> section will show a binary section of text that
+represents the submitted pdf file. In the <strong>Outputs</strong>
+section you can see all the extracted fields in JSON format (used by
+developers).</p>
+<p><img src="images/invoiceprocessed.png" /></p></li>
+<li><p>If you want to see the email click on the <strong>9
+square</strong> in the upper right hand corner. Then choose
+<strong>Outlook</strong> but choose <strong>Open in new tab</strong></p>
+<p><img src="images/newtab.png" /></p></li>
+<li><p>In <strong>Outlook</strong> open the item title <strong>Invoice
+processed</strong></p></li>
+<li><p>Browse all the mapped fields in the email</p>
+<p><img src="images/invoiceemail.png" /></p></li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>In this exercise, you created a flow that leveraged a pre-created AI
+Builder model to parse a PDF invoice and emailed the results all without
+writing any code.</p>
+</body>
+</html>
